@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6e6; /* Light red background */
+    color: #4d0000; /* Dark red text */
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffcccc; /* Light red card background */
+    border: 1px solid #b30000; /* Dark red border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #b30000; /* Dark red header */
+    color: #fff;
+}
+
+.photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.header p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.my-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-section,
+.right-section {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-section {
+    border-right: 1px solid #b30000; /* Dark red border */
+}
+
+.class h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #b30000; /* Dark red underline */
+    padding-bottom: 5px;
+    color: #4d0000; /* Dark red text */
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .my-container {
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #b30000;
+    }
+
+    .right-section {
+        border-bottom: none;
+    }
+}
